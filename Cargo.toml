@@ -7,5 +7,19 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+prettytable-rs = "0.8.*"
 reqwest = "0.9.*"
+scraper = "0.10.*"
 select = "0.4.*"
+
+[[bin]]
+name = "grab_all_links"
+path = "src/grab_all_links.rs"
+
+[[bin]]
+name = "scraper_stories"
+path = "src/scraper_stories.rs"
+
+[[bin]]
+name = "rank_story_link"
+path = "src/rank_story_link.rs"
